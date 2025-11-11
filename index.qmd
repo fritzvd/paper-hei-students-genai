@@ -21,6 +21,8 @@ The perceived privacy of students using these tools has not received that much a
 
 The question this paper therefore puts forward is:
 
+## Research Questions
+
 How do students in higher education perceive privacy when perusing genAI?
 
 Subquestions:
@@ -28,3 +30,5 @@ Subquestions:
 - What kind of information do they divulge?
 - How trusting are students of genAI platforms?
 - How do they perceive their influence on the information they give to LLM's?
+- How 
+
