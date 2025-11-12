@@ -17,18 +17,21 @@ As a result of the increased use of genAI, such as LLM's, a great variety of top
 
 The topic of privacy has been studied in relation to enhanced learning [@alshugranPreservingStudentPrivacy2025] and in relation to guidelines and policy documents of universities [@ngAnalyzingSecurityPrivacy2025].
 
-The perceived privacy of students using these tools has not received that much attention.
+Furthermore anonymity and disinhibition in the context of genAI has so far received very little attention. The online disinhibition effect describes how people behave differently in an online environment as they would offline, showing less inihibitions [@suler2004online]. Online disinhibition is often connected to perceived anonymity. Referring to the "degree to which a communicator perceives the message source is unknown" [@anonymousRevealNotReveal1998]. Which could also to lead to self-disclosure and more open conversations [@joinsonDisinhibitionInternet2007].
+
+The perceived privacy and anonimity of students using these tools has not received that much attention.
 
 The question this paper therefore puts forward is:
 
 ## Research Questions
 
-How do students in higher education perceive privacy when perusing genAI?
+How do students in higher education perceive privacy and anonimity when perusing genAI?
 
 Subquestions:
-- What do students use genAI for?
-- What kind of information do they divulge?
+
+- What do HEI students use genAI for?
+- What kind of information do they share with the system to get what they want?
 - How trusting are students of genAI platforms?
 - How do they perceive their influence on the information they give to LLM's?
-- How 
+- Do students feel like they can discuss more 
 
