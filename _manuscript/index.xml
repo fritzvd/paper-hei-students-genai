@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+  <front>
+    <article-meta>
+      <title-group>
+        <article-title>Perceived Privacy and Apathy in GenAI amongst HEI
+students</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes">
+          <name>
+            <surname>Deventer</surname>
+            <given-names>Fritz Van</given-names>
+          </name>
+          <string-name>Fritz Van Deventer</string-name>
+          <role vocab="https://credit.niso.org" vocab-term="writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">writing</role>
+          <xref ref-type="aff" rid="aff-1">a</xref>
+          <xref ref-type="corresp" rid="cor-1">*</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="aff-1">
+        <institution-wrap>
+          <institution>HAN University of Applied Sciences</institution>
+        </institution-wrap>
+      </aff>
+      <author-notes>
+        <corresp id="cor-1"/>
+      </author-notes>
+      <history/>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="introduction">
+      <title>Introduction</title>
+      <p>Recent developments have seen generative Artificial Intelligence
+  (genAI) being available for the masses with Large Language Models
+  (LLM’s) having a much easier interface for non-technical users. Often
+  signified with the moniker: AI or with magical stars (✨) it features
+  in many applications ranging from web search to
+  (<xref alt="Google n.d." rid="ref-googleGoogleAIMode" ref-type="bibr">Google
+  n.d.</xref>;
+  <xref alt="DuckDuckGo n.d." rid="ref-duckduckgoDuckaiDuckDuckGoHelp" ref-type="bibr">DuckDuckGo
+  n.d.</xref>;
+  <xref alt="Microsoft n.d." rid="ref-microsoftIntroducingNewBing" ref-type="bibr">Microsoft
+  n.d.</xref>) personal communication such as Outlook
+  (<xref alt="“Chat with Copilot in Outlook - Microsoft Support” n.d." rid="ref-ChatCopilotOutlook" ref-type="bibr">“Chat
+  with Copilot in Outlook - Microsoft Support” n.d.</xref>) or Whatsapp
+  (<xref alt="Meta n.d." rid="ref-metaMetaAIWhatsApp" ref-type="bibr">Meta
+  n.d.</xref>). genAI is quickly becoming embedded in all sorts of
+  business and applications
+  (<xref alt="Grantham-Philips 2024" rid="ref-grantham-philipsAIBecomingIngrained2024" ref-type="bibr">Grantham-Philips
+  2024</xref>). Even more than in applications beforehand users are
+  encouraged to upload documents and provide more context for the LLM to
+  perform better.</p>
+      <p>As a result of the increased use of genAI, such as LLM’s, a great
+  variety of topics have been researched in the last few years. Such as
+  environmental impact
+  (<xref alt="Ding and Shi 2024" rid="ref-dingSustainableLLMServing2024" ref-type="bibr">Ding
+  and Shi 2024</xref>;
+  <xref alt="Rillig et al. 2023" rid="ref-rillig2023risks" ref-type="bibr">Rillig
+  et al. 2023</xref>), closing and / or widening of the digital divide
+  (<xref alt="Carter, Liu, and Cantrell 2020" rid="ref-carterExploringIntersectionDigital2020" ref-type="bibr">Carter,
+  Liu, and Cantrell 2020</xref>;
+  <xref alt="Sartori and Bocca 2023" rid="ref-sartoriMindingGapsPublic2023" ref-type="bibr">Sartori
+  and Bocca 2023</xref>). In the context of education, and higher
+  education specifically research has been conducted concerning a number
+  of topics including: guidelines and policy
+  (<xref alt="Wang et al. 2024" rid="ref-wangGenerativeAIHigher2024" ref-type="bibr">Wang
+  et al. 2024</xref>), about usage, knowledge and skills
+  (<xref alt="Suonpää, Heikkilä, and Dimkar 2024" rid="ref-suonpaaStudentsPerceptionsGenerative2024" ref-type="bibr">Suonpää,
+  Heikkilä, and Dimkar 2024</xref>;
+  <xref alt="Silvennoinen, Aksovaara, and Alanko-Turunen 2025" rid="ref-silvennoinenStudentsUsageGenAI2025" ref-type="bibr">Silvennoinen,
+  Aksovaara, and Alanko-Turunen 2025</xref>), personalized learning
+  (<xref alt="Zhang, Yao, and Hadizadeh Moghaddam 2025" rid="ref-zhangDesigningGenAITools2025" ref-type="bibr">Zhang,
+  Yao, and Hadizadeh Moghaddam 2025</xref>;
+  <xref alt="Udeh 2025" rid="ref-udehRoleGenerativeAI2025" ref-type="bibr">Udeh
+  2025</xref>), the effect on learning outcomes
+  (<xref alt="Han, Peng, and Liu 2025" rid="ref-hanImpactGenAILearning2025" ref-type="bibr">Han,
+  Peng, and Liu 2025</xref>) and the use of genAI in collaborative
+  learning
+  (<xref alt="Perifanou and Economides 2025" rid="ref-perifanouCollaborativeUsesGenAI2025" ref-type="bibr">Perifanou
+  and Economides 2025</xref>).</p>
+      <p>The topic of privacy has been studied in relation to enhanced
+  learning
+  (<xref alt="Alshugran and Kloub 2025" rid="ref-alshugranPreservingStudentPrivacy2025" ref-type="bibr">Alshugran
+  and Kloub 2025</xref>) and in relation to guidelines and policy
+  documents of universities
+  (<xref alt="Ng et al. 2025" rid="ref-ngAnalyzingSecurityPrivacy2025" ref-type="bibr">Ng
+  et al. 2025</xref>).</p>
+      <p>Furthermore anonymity and disinhibition in the context of genAI has
+  so far received very little attention. The online disinhibition effect
+  describes how people behave differently in an online environment as
+  they would offline, showing less inihibitions
+  (<xref alt="Suler 2004" rid="ref-suler2004online" ref-type="bibr">Suler
+  2004</xref>). Online disinhibition is often connected to perceived
+  anonymity. Referring to the “degree to which a communicator perceives
+  the message source is unknown”
+  (<xref alt="Anonymous 1998" rid="ref-anonymousRevealNotReveal1998" ref-type="bibr">Anonymous
+  1998</xref>). Which could also to lead to self-disclosure and more
+  open conversations
+  (<xref alt="Joinson 2007" rid="ref-joinsonDisinhibitionInternet2007" ref-type="bibr">Joinson
+  2007</xref>).</p>
+      <p>The perceived privacy and anonimity of students using these tools
+  has not received that much attention.</p>
+      <p>The question this paper therefore puts forward is:</p>
+    </sec>
+    <sec id="research-questions">
+      <title>Research Questions</title>
+      <p>How do students in higher education perceive privacy and anonimity
+  when perusing genAI?</p>
+      <p>Subquestions:</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>What do HEI students use genAI for?</p>
+        </list-item>
+        <list-item>
+          <p>What kind of information do they share with the system to get
+      what they want?</p>
+        </list-item>
+        <list-item>
+          <p>How trusting are students of genAI platforms?</p>
+        </list-item>
+        <list-item>
+          <p>How do they perceive their influence on the information they
+      give to LLM’s?</p>
+        </list-item>
+        <list-item>
+          <p>Do students feel like they can discuss more</p>
+        </list-item>
+      </list>
+    </sec>
+  </body>
+  <back>
+    <ref-list>
+      <title/>
+      <ref id="ref-alshugranPreservingStudentPrivacy2025">
+        <element-citation publication-type="paper-conference">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Alshugran</surname>
+              <given-names>Tariq A.</given-names>
+            </name>
+            <name>
+              <surname>Kloub</surname>
+              <given-names>Lina H.</given-names>
+            </name>
+          </person-group>
+          <article-title>Preserving Student Privacy While Leveraging Generative AI in Higher Education</article-title>
+          <source>2025 Northeast Section Conference Proceedings</source>
+          <publisher-name>ASEE Conferences</publisher-name>
+          <publisher-loc>University of Bridgeport, Bridgeport, CT</publisher-loc>
+          <year iso-8601-date="2025-03">2025</year>
+          <month>03</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <pub-id pub-id-type="doi">10.18260/1-2-119-54995</pub-id>
+          <fpage>54995</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-anonymousRevealNotReveal1998">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <string-name>Anonymous</string-name>
+          </person-group>
+          <article-title>To Reveal or Not to Reveal: A Theoretical Model of Anonymous Communication</article-title>
+          <source>Communication Theory</source>
+          <year iso-8601-date="1998-11">1998</year>
+          <month>11</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-12">2025</year>
+            <month>11</month>
+            <day>12</day>
+          </date-in-citation>
+          <volume>8</volume>
+          <issue>4</issue>
+          <issn>1050-3293, 1468-2885</issn>
+          <pub-id pub-id-type="doi">10.1111/j.1468-2885.1998.tb00226.x</pub-id>
+          <fpage>381</fpage>
+          <lpage>407</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-carterExploringIntersectionDigital2020">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Carter</surname>
+              <given-names>Lemuria</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Dapeng</given-names>
+            </name>
+            <name>
+              <surname>Cantrell</surname>
+              <given-names>Caley</given-names>
+            </name>
+          </person-group>
+          <article-title>Exploring the Intersection of the Digital Divide and Artificial Intelligence: A Hermeneutic Literature Review</article-title>
+          <source>AIS Transactions on Human-Computer Interaction</source>
+          <year iso-8601-date="2020-12">2020</year>
+          <month>12</month>
+          <volume>12</volume>
+          <issue>4</issue>
+          <issn>1944-3900</issn>
+          <pub-id pub-id-type="doi">10.17705/1thci.00138</pub-id>
+          <fpage>253</fpage>
+          <lpage>275</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-ChatCopilotOutlook">
+        <element-citation>
+          <article-title>Chat with Copilot in Outlook - Microsoft Support</article-title>
+          <publisher-name>https://support.microsoft.com/en-us/topic/chat-with-copilot-in-outlook-8090e7b3-5b1d-4c6d-9b06-02edac062f58</publisher-name>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-dingSustainableLLMServing2024">
+        <element-citation publication-type="paper-conference">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ding</surname>
+              <given-names>Yi</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>Tianyao</given-names>
+            </name>
+          </person-group>
+          <article-title>Sustainable LLM Serving: Environmental Implications, Challenges, and Opportunities : Invited Paper</article-title>
+          <source>2024 IEEE 15th International Green and Sustainable Computing Conference (IGSC)</source>
+          <publisher-name>IEEE</publisher-name>
+          <publisher-loc>Austin, TX, USA</publisher-loc>
+          <year iso-8601-date="2024-11">2024</year>
+          <month>11</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+          <isbn>979-8-3315-0786-2</isbn>
+          <pub-id pub-id-type="doi">10.1109/IGSC64514.2024.00016</pub-id>
+          <fpage>37</fpage>
+          <lpage>38</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-duckduckgoDuckaiDuckDuckGoHelp">
+        <element-citation>
+          <person-group person-group-type="author">
+            <string-name>DuckDuckGo</string-name>
+          </person-group>
+          <article-title>Duck.ai - DuckDuckGo Help Pages</article-title>
+          <publisher-name>https://duckduckgo.com/duckduckgo-help-pages/duckai</publisher-name>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-googleGoogleAIMode">
+        <element-citation>
+          <person-group person-group-type="author">
+            <string-name>Google</string-name>
+          </person-group>
+          <article-title>Google AI Mode - a new way to search, whatever’s on your mind</article-title>
+          <source>Google AI Mode - a new way to search, whatever’s on your mind</source>
+          <publisher-name>https://search.google/ways-to-search/ai-mode/</publisher-name>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-grantham-philipsAIBecomingIngrained2024">
+        <element-citation>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Grantham-Philips</surname>
+              <given-names>Wyatte</given-names>
+            </name>
+          </person-group>
+          <article-title>AI is becoming ingrained in businesses across industries. Where is it going in 2025?</article-title>
+          <source>AP News</source>
+          <publisher-name>https://apnews.com/article/artificial-intelligence-interview-pwc-dan-priest-a0458061469735aed7af5fa49682e076</publisher-name>
+          <year iso-8601-date="2024-12">2024</year>
+          <month>12</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-hanImpactGenAILearning2025">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Han</surname>
+              <given-names>Xiaoli</given-names>
+            </name>
+            <name>
+              <surname>Peng</surname>
+              <given-names>Hongchao</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Mingzhuo</given-names>
+            </name>
+          </person-group>
+          <article-title>The impact of GenAI on learning outcomes: A systematic review and meta-analysis of experimental studies</article-title>
+          <source>Educational Research Review</source>
+          <year iso-8601-date="2025-08">2025</year>
+          <month>08</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <volume>48</volume>
+          <issn>1747-938X</issn>
+          <pub-id pub-id-type="doi">10.1016/j.edurev.2025.100714</pub-id>
+          <fpage>100714</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-joinsonDisinhibitionInternet2007">
+        <element-citation publication-type="chapter">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Joinson</surname>
+              <given-names>Adam N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Disinhibition and the Internet</article-title>
+          <source>Psychology and the Internet</source>
+          <publisher-name>Elsevier</publisher-name>
+          <year iso-8601-date="2007">2007</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-12">2025</year>
+            <month>11</month>
+            <day>12</day>
+          </date-in-citation>
+          <isbn>978-0-12-369425-6</isbn>
+          <pub-id pub-id-type="doi">10.1016/B978-012369425-6/50023-0</pub-id>
+          <fpage>75</fpage>
+          <lpage>92</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-metaMetaAIWhatsApp">
+        <element-citation>
+          <person-group person-group-type="author">
+            <string-name>Meta</string-name>
+          </person-group>
+          <article-title>Meta AI in WhatsApp: Chat, Create &amp; Get Things Done</article-title>
+          <source>WhatsApp.com</source>
+          <publisher-name>https://www.whatsapp.com/meta-ai</publisher-name>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-microsoftIntroducingNewBing">
+        <element-citation>
+          <person-group person-group-type="author">
+            <string-name>Microsoft</string-name>
+          </person-group>
+          <article-title>Introducing the new Bing. The AI-powered assistant for your search.</article-title>
+          <publisher-name>https://www.microsoft.com/en-us/edge/features/the-new-bing</publisher-name>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-06">2025</year>
+            <month>11</month>
+            <day>06</day>
+          </date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="ref-ngAnalyzingSecurityPrivacy2025">
+        <element-citation>
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ng</surname>
+              <given-names>Bei Yi</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Jiarui</given-names>
+            </name>
+            <name>
+              <surname>Tong</surname>
+              <given-names>Xinyuan</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>Kevin</given-names>
+            </name>
+            <name>
+              <surname>Yenne</surname>
+              <given-names>Gauthami</given-names>
+            </name>
+            <name>
+              <surname>Chandrasekaran</surname>
+              <given-names>Varun</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>Jingjie</given-names>
+            </name>
+          </person-group>
+          <article-title>Analyzing Security and Privacy Challenges in Generative AI Usage Guidelines for Higher Education</article-title>
+          <publisher-name>arXiv</publisher-name>
+          <year iso-8601-date="2025-06">2025</year>
+          <month>06</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <uri>https://arxiv.org/abs/2506.20463</uri>
+          <pub-id pub-id-type="doi">10.48550/arXiv.2506.20463</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="ref-perifanouCollaborativeUsesGenAI2025">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Perifanou</surname>
+              <given-names>Maria</given-names>
+            </name>
+            <name>
+              <surname>Economides</surname>
+              <given-names>Anastasios A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Collaborative Uses of GenAI Tools in Project-Based Learning</article-title>
+          <source>Education Sciences</source>
+          <publisher-name>Multidisciplinary Digital Publishing Institute</publisher-name>
+          <year iso-8601-date="2025-03">2025</year>
+          <month>03</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <volume>15</volume>
+          <issue>3</issue>
+          <issn>2227-7102</issn>
+          <pub-id pub-id-type="doi">10.3390/educsci15030354</pub-id>
+          <fpage>354</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-rillig2023risks">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Rillig</surname>
+              <given-names>Matthias C</given-names>
+            </name>
+            <name>
+              <surname>Ågerstrand</surname>
+              <given-names>Marlene</given-names>
+            </name>
+            <name>
+              <surname>Bi</surname>
+              <given-names>Mohan</given-names>
+            </name>
+            <name>
+              <surname>Gould</surname>
+              <given-names>Kenneth A</given-names>
+            </name>
+            <name>
+              <surname>Sauerland</surname>
+              <given-names>Uli</given-names>
+            </name>
+          </person-group>
+          <article-title>Risks and benefits of large language models for the environment</article-title>
+          <source>Environmental science &amp; technology</source>
+          <publisher-name>ACS Publications</publisher-name>
+          <year iso-8601-date="2023">2023</year>
+          <volume>57</volume>
+          <issue>9</issue>
+          <fpage>3464</fpage>
+          <lpage>3466</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-sartoriMindingGapsPublic2023">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sartori</surname>
+              <given-names>Laura</given-names>
+            </name>
+            <name>
+              <surname>Bocca</surname>
+              <given-names>Giulia</given-names>
+            </name>
+          </person-group>
+          <article-title>Minding the gap(s): Public perceptions of AI and socio-technical imaginaries</article-title>
+          <source>AI &amp; SOCIETY</source>
+          <year iso-8601-date="2023-04">2023</year>
+          <month>04</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-10">2025</year>
+            <month>11</month>
+            <day>10</day>
+          </date-in-citation>
+          <volume>38</volume>
+          <issue>2</issue>
+          <issn>1435-5655</issn>
+          <pub-id pub-id-type="doi">10.1007/s00146-022-01422-1</pub-id>
+          <fpage>443</fpage>
+          <lpage>458</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-silvennoinenStudentsUsageGenAI2025">
+        <element-citation publication-type="paper-conference">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Silvennoinen</surname>
+              <given-names>Minna</given-names>
+            </name>
+            <name>
+              <surname>Aksovaara</surname>
+              <given-names>Satu</given-names>
+            </name>
+            <name>
+              <surname>Alanko-Turunen</surname>
+              <given-names>Merja</given-names>
+            </name>
+          </person-group>
+          <article-title>Students’ Usage of GenAI in Universities of Applied Sciences: Experiences and Development Needs for Guidance and Support</article-title>
+          <source>38th Bled eConference: Empowering Transformation: Shaping Digital Futures for All: Conference Proceedings</source>
+          <publisher-name>University of Maribor Press</publisher-name>
+          <year iso-8601-date="2025-06">2025</year>
+          <month>06</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <isbn>978-961-286-998-4</isbn>
+          <pub-id pub-id-type="doi">10.18690/um.fov.4.2025.29</pub-id>
+          <fpage>467</fpage>
+          <lpage>482</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-suler2004online">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suler</surname>
+              <given-names>John</given-names>
+            </name>
+          </person-group>
+          <article-title>The online disinhibition effect</article-title>
+          <source>Cyberpsychology &amp; behavior</source>
+          <publisher-name>Mary Ann Liebert, Inc.</publisher-name>
+          <year iso-8601-date="2004">2004</year>
+          <volume>7</volume>
+          <issue>3</issue>
+          <fpage>321</fpage>
+          <lpage>326</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-suonpaaStudentsPerceptionsGenerative2024">
+        <element-citation publication-type="paper-conference">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Suonpää</surname>
+              <given-names>Maija</given-names>
+            </name>
+            <name>
+              <surname>Heikkilä</surname>
+              <given-names>Jutta</given-names>
+            </name>
+            <name>
+              <surname>Dimkar</surname>
+              <given-names>Ana</given-names>
+            </name>
+          </person-group>
+          <article-title>Students’ Perceptions Of Generative Ai Usage And Risks In A Finnish Higher Education Institution</article-title>
+          <source>18th International Technology, Education and Development Conference</source>
+          <publisher-loc>Valencia, Spain</publisher-loc>
+          <year iso-8601-date="2024-03">2024</year>
+          <month>03</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <pub-id pub-id-type="doi">10.21125/inted.2024.0825</pub-id>
+          <fpage>3071</fpage>
+          <lpage>3077</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-udehRoleGenerativeAI2025">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Udeh</surname>
+              <given-names>Chinemelum Goodness</given-names>
+            </name>
+          </person-group>
+          <article-title>The role of generative AI in personalized learning for higher education</article-title>
+          <source>World Journal of Advanced Engineering Technology and Sciences</source>
+          <year iso-8601-date="2025">2025</year>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <volume>14</volume>
+          <issue>2</issue>
+          <issn>2582-8266</issn>
+          <pub-id pub-id-type="doi">10.30574/wjaets.2025.14.2.0077</pub-id>
+          <fpage>205</fpage>
+          <lpage>207</lpage>
+        </element-citation>
+      </ref>
+      <ref id="ref-wangGenerativeAIHigher2024">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Hui</given-names>
+            </name>
+            <name>
+              <surname>Dang</surname>
+              <given-names>Anh</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>Zihao</given-names>
+            </name>
+            <name>
+              <surname>Mac</surname>
+              <given-names>Son</given-names>
+            </name>
+          </person-group>
+          <article-title>Generative AI in higher education: Seeing ChatGPT through universities’ policies, resources, and guidelines</article-title>
+          <source>Computers and Education: Artificial Intelligence</source>
+          <year iso-8601-date="2024-12">2024</year>
+          <month>12</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <volume>7</volume>
+          <issn>2666-920X</issn>
+          <pub-id pub-id-type="doi">10.1016/j.caeai.2024.100326</pub-id>
+          <fpage>100326</fpage>
+          <lpage/>
+        </element-citation>
+      </ref>
+      <ref id="ref-zhangDesigningGenAITools2025">
+        <element-citation publication-type="article-journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Ling</given-names>
+            </name>
+            <name>
+              <surname>Yao</surname>
+              <given-names>Zijun</given-names>
+            </name>
+            <name>
+              <surname>Hadizadeh Moghaddam</surname>
+              <given-names>Arya</given-names>
+            </name>
+          </person-group>
+          <article-title>Designing GenAI Tools for Personalized Learning Implementation: Theoretical Analysis and Prototype of a Multi-Agent System</article-title>
+          <source>Journal of Teacher Education</source>
+          <publisher-name>SAGE Publications Inc</publisher-name>
+          <year iso-8601-date="2025-05">2025</year>
+          <month>05</month>
+          <date-in-citation content-type="access-date">
+            <year iso-8601-date="2025-11-11">2025</year>
+            <month>11</month>
+            <day>11</day>
+          </date-in-citation>
+          <volume>76</volume>
+          <issue>3</issue>
+          <issn>0022-4871</issn>
+          <pub-id pub-id-type="doi">10.1177/00224871251325109</pub-id>
+          <fpage>280</fpage>
+          <lpage>293</lpage>
+        </element-citation>
+      </ref>
+    </ref-list>
+  </back>
+</article>
