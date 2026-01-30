@@ -1,0 +1,18 @@
+When talking about sociotechnical imaginaries a thorough review of the field has been conducted by @hendriksShapingFutureConceptual2025 explaining how this evolved into its own research field. Imagined futures are shaped by scientific and technological development and in tern influence new developments [@jasanoffContainingAtomSociotechnical2009], see @fig-future-imaginaries-jasanoff.
+
+::: {#fig-future-imaginaries-jasanoff}
+
+```{mermaid}
+flowchart LR
+    A(Future Vision) --> | shapes|B(Scientific and Technological Developments)
+    B --> |influences |A
+```
+
+Intertwined relation of future vision and developments [@jasanoffContainingAtomSociotechnical2009]
+:::
+
+"the rhetoric of anthropomorphism can do more harm than good when it comes to conceptualizing
+the important ethical challenges posed by emerging technologies. " @watsonRhetoricRealityAnthropomorphism2019
+
+
+_"How can one seek to apply existing technology to a problem, knowing that no matter what platform one decides to work on, it is almost sure that some new technology will soon pass it by? Perhaps the best solution is not, therefore, to look at technology for our solutions, but to examine our needs."_ @ervinCanTechnologyFulfill1993

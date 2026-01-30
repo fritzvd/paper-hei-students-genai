@@ -2,3 +2,5 @@
 # *.pdf
 .DS_Store
 *.aux
+**/*.quarto_ipynb
+chrome-headless-shell

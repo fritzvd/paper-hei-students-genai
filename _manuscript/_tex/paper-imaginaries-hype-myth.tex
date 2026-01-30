@@ -1,0 +1,475 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Patterns of Myth, Over-promise and Hype in New Technologies: A
+case of Generative AI amongst Higher Education students.}
+\author{Fritz Van Deventer}
+\date{}
+\begin{document}
+\maketitle
+
+
+\subsection{Introduction}\label{introduction}
+
+\emph{``I think in many ways GPT-5 is already smarter than me and many
+other people,''} says Sam Altman when interviewed by Die Welt {[}1{]}.
+Anthromorphisation, mystification and hype currently have surrounded
+Artificial Intelligence since the late 1950s {[}2{]}. AI is not alone in
+being communicated in a ``hyped'' fashion, that can involve
+``exaggerations about the significance or certainty of research findings
+{[}3{]}. This has been the case for a lot of topics such as but not
+limited to: neuroimaging, stem cell research, nanotechnology, genomics,
+and artifical intelligence.
+
+Over the last few years there has been a great wave of AI applications,
+or more accurately software applications bundled with generative AI
+(GenAI) amongst other forms of AI. GenAI uses a variety of models to
+generate text, images, music and even video. Online platforms like
+ChatGPT, but also Copilot which is now embedded in the whole Microsoft
+Office suite, and even plain Google Search which always comes with a
+generated answer on top of the page. Signified with ``AI'' or ✨ it is
+usually a form of a Large Language Model that interprets requests and
+gives human-like answers.
+
+The permeation of AI in our tools and systems is coupled with this
+belief that if we do not participate, we might miss the boat and will
+not be able to keep up with the renewed productivity our AI-using
+colleagues and competitors will enjoy.
+
+But what we are seeing is not new. Firstly we have seen this before with
+the exact same term in different guises since the 1950s: AI {[}2{]}.
+What we are seeing is a repetition of technology industry overpromising
+new techniques or technologies and packaging them as a panacea for all
+kinds of problems or General Purpose Tools, while also decreasing
+emphasis on a large variety of negative consequences that this
+technology also brings. For example the profound physical impact these
+new technologies are having on our environment {[}4{]}, the security
+issues of models with jailbreak attempts {[}7{]}. Technologies are not
+neutral by nature, and do not automatically point toward ``progress''.
+
+This paper puts forward a pattern that helps recognizing language and
+rhetoric surrounding technological innovations to deflate the hype for
+students in Higher Education Institutes (HEIs).
+
+\subsection{Related work}\label{related-work}
+
+Surrounding ``hype'' a lot of research has already been done concerning
+studying hype {[}8{]}, or in its problems and defining it as something
+other than scientific misconduct {[}3{]}, also concerning the role of
+emotional and/or logical expectations {[}9{]} and comparing different
+hypes and their life cycles {[}10{]}.
+
+Myth and technology have a long history together. Collectively we adhere
+to the idea that with technology and change we also converge to a better
+reality, to progress. {[}11{]} states that believing in this myth is a
+religious act itself.
+
+We project ideas of what a future society can look like with these new
+technologies which can be called \emph{sociotechnic imaginaries}
+{[}12{]}.
+
+This paper seeks to find a pattern to recognize the process where
+mythical belief surrounding technological innovation creates myth and
+polarizes criticism into categories of Luddism and technophilia, while
+societal pressure to participate increases.
+
+\subsection{Methodology}\label{methodology}
+
+This research will involve two types of qualitative analysis of language
+)(and rhetoric) used in GenAI discourse and news articles as well as
+language used by HEI students.
+
+\subsubsection{Thematic analysis}\label{thematic-analysis}
+
+\emph{Thematic analysis} will be used as {[}13{]} and {[}14{]} describe
+it to find common themes and topics in personal interview with students.
+Thematic analysis is a more subjective approach to data, where language
+is central. It requires a \emph{coding} process that uses semantic and
+latent codes to categorize statements and find \emph{themes} and
+\emph{subthemes} of meaning in texts.
+
+\subsubsection{Critical Discourse
+Analysis}\label{critical-discourse-analysis}
+
+Through \emph{critical discourse analyis} (CDA) I will look at what kind
+of language is constructing narratives, describes relations of power and
+how it creates or reinforces myths {[}15{]}.
+
+CDA tries to find patterns in power dynamics and social effects in
+discourse. In this analysis we can take the texts further and analyze
+context and intertextuality to challenge social inequalities. I will
+focus mainly on step two: \emph{Identify obstacles to addressing the
+social wrong} of this process which consists of three stages {[}16{]}:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Analyse dialectical relations
+\item
+  Select texts
+\item
+  Analyse texts interdiscursively and linguistically
+\end{enumerate}
+
+\subsection{Problem}\label{problem}
+
+The problem with new technologies is the ``hype'' created around it that
+leads to false beliefs or ``creeds'', which are hard to decouple from
+what the technologies actually bring to the table.
+
+\subsection{Solution}\label{solution}
+
+By discovering themes and power relations in language we can describe a
+recurring phenomenon in different technological transformations.
+
+\subsection{Consequences}\label{consequences}
+
+Being able to recognize language as hyperbolic or mythical empowers
+students to discern truth from propaganda.
+
+\subsection{Forces}\label{forces}
+
+\subsubsection{Solutions over needs}\label{solutions-over-needs}
+
+Instead of looking at our needs we are often distracted by technology
+and try to find a way to fit in our workflow {[}17{]}.
+
+\subsubsection{Pace of change and fear of missing
+out}\label{pace-of-change-and-fear-of-missing-out}
+
+Technological innovations happen quickly and people fall prey to
+innovation anxiety {[}18{]}. When anxious it is harder to discern truth
+from fiction.
+
+\subsubsection{Propaganda from
+companies}\label{propaganda-from-companies}
+
+Industry leaders have a very real interest in hyping their own tool,
+model, progress or company as they have financial interests in
+attrracting more users and perhaps ruling out competition.
+
+\subsection*{References}\label{references}
+\addcontentsline{toc}{subsection}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{0}
+\bibitem[\citeproctext]{ref-burgardOpenAIChefSamAltman2025}
+\CSLLeftMargin{1. }%
+\CSLRightInline{Burgard, J.P.: {OpenAI-Chef Sam Altman}: ,,{Ich} glaube
+nicht, dass die {KI Menschen} wie {Ameisen} behandeln wird`` - {WELT},
+(2025).}
+
+\bibitem[\citeproctext]{ref-guestUncriticalAdoptionAI2025}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Guest, O., Suarez, M., Müller, B., van Meerkerk, E.,
+Oude Groote Beverborg, A., de Haan, R., Reyes Elizondo, A., Blokpoel,
+M., Scharfenberg, N., Kleinherenbrink, A., Camerino, I., Woensdregt, M.,
+Monett, D., Brown, J., Avraamidou, L., Alenda-Demoutiez, J., Hermans,
+F., van Rooij, I.: Against the {Uncritical Adoption} of '{AI}'
+{Technologies} in {Academia}, (2025).
+https://doi.org/\href{https://doi.org/10.5281/ZENODO.17065099}{10.5281/ZENODO.17065099}.}
+
+\bibitem[\citeproctext]{ref-intemannUnderstandingProblemHype2022}
+\CSLLeftMargin{3. }%
+\CSLRightInline{Intemann, K.: Understanding the {Problem} of
+{``{Hype}''}: {Exaggeration}, {Values}, and {Trust} in {Science}.
+Canadian Journal of Philosophy. 52, 279--294 (2022).
+https://doi.org/\href{https://doi.org/10.1017/can.2020.45}{10.1017/can.2020.45}.}
+
+\bibitem[\citeproctext]{ref-crawford2021atlas}
+\CSLLeftMargin{4. }%
+\CSLRightInline{Crawford, K.: The atlas of {AI}: {Power}, politics, and
+the planetary costs of artificial intelligence. Yale University Press
+(2021).}
+
+\bibitem[\citeproctext]{ref-perezIgnorePreviousPrompt2022}
+\CSLLeftMargin{5. }%
+\CSLRightInline{Perez, F., Ribeiro, I.: Ignore {Previous Prompt}:
+{Attack Techniques For Language Models},
+\url{https://arxiv.org/abs/2211.09527}, (2022).
+https://doi.org/\href{https://doi.org/10.48550/arXiv.2211.09527}{10.48550/arXiv.2211.09527}.}
+
+\bibitem[\citeproctext]{ref-liMultistepJailbreakingPrivacy2023}
+\CSLLeftMargin{6. }%
+\CSLRightInline{Li, H., Guo, D., Fan, W., Xu, M., Huang, J., Meng, F.,
+Song, Y.: Multi-step {Jailbreaking Privacy Attacks} on {ChatGPT},
+\url{https://arxiv.org/abs/2304.05197}, (2023).
+https://doi.org/\href{https://doi.org/10.48550/arXiv.2304.05197}{10.48550/arXiv.2304.05197}.}
+
+\bibitem[\citeproctext]{ref-carliniExtractingTrainingData2021}
+\CSLLeftMargin{7. }%
+\CSLRightInline{Carlini, N., Tramer, F., Wallace, E., Jagielski, M.,
+Herbert-Voss, A., Lee, K., Roberts, A., Brown, T., Song, D., Erlingsson,
+U., Oprea, A., Raffel, C.: Extracting {Training Data} from {Large
+Language Models}, \url{https://arxiv.org/abs/2012.07805}, (2021).
+https://doi.org/\href{https://doi.org/10.48550/arXiv.2012.07805}{10.48550/arXiv.2012.07805}.}
+
+\bibitem[\citeproctext]{ref-dedehayirHypeCycleModel2016}
+\CSLLeftMargin{8. }%
+\CSLRightInline{Dedehayir, O., Steinert, M.: The hype cycle model: {A}
+review and future directions. Technological Forecasting and Social
+Change. 108, 28--41 (2016).
+https://doi.org/\href{https://doi.org/10.1016/j.techfore.2016.04.005}{10.1016/j.techfore.2016.04.005}.}
+
+\bibitem[\citeproctext]{ref-shiRoleExpectationInnovation2023}
+\CSLLeftMargin{9. }%
+\CSLRightInline{Shi, Y., Herniman, J.: The role of expectation in
+innovation evolution: {Exploring} hype cycles. Technovation. 119, 102459
+(2023).
+https://doi.org/\href{https://doi.org/10.1016/j.technovation.2022.102459}{10.1016/j.technovation.2022.102459}.}
+
+\bibitem[\citeproctext]{ref-vanlenteComparingTechnologicalHype2013}
+\CSLLeftMargin{10. }%
+\CSLRightInline{van Lente, H., Spitters, C., Peine, A.: Comparing
+technological hype cycles: {Towards} a theory. Technological Forecasting
+and Social Change. 80, 1615--1628 (2013).
+https://doi.org/\href{https://doi.org/10.1016/j.techfore.2012.12.004}{10.1016/j.techfore.2012.12.004}.}
+
+\bibitem[\citeproctext]{ref-burdett2014religion}
+\CSLLeftMargin{11. }%
+\CSLRightInline{Burdett, M.S.: The religion of technology:
+{Transhumanism} and the myth of progress. Religion and Transhumanism:
+The Unknown Future of Human Enhancement. 131 (2014).}
+
+\bibitem[\citeproctext]{ref-jasanoffContainingAtomSociotechnical2009}
+\CSLLeftMargin{12. }%
+\CSLRightInline{Jasanoff, S., Kim, S.-H.: Containing the {Atom}:
+{Sociotechnical Imaginaries} and {Nuclear Power} in the {United States}
+and {South Korea}. Minerva. 47, 119--146 (2009).
+https://doi.org/\href{https://doi.org/10.1007/s11024-009-9124-4}{10.1007/s11024-009-9124-4}.}
+
+\bibitem[\citeproctext]{ref-naeemStepbyStepProcessThematic2023}
+\CSLLeftMargin{13. }%
+\CSLRightInline{Naeem, M., Ozuem, W., Howell, K., Ranfagni, S.: A
+{Step-by-Step Process} of {Thematic Analysis} to {Develop} a {Conceptual
+Model} in {Qualitative Research}. International Journal of Qualitative
+Methods. 22, 16094069231205789 (2023).
+https://doi.org/\href{https://doi.org/10.1177/16094069231205789}{10.1177/16094069231205789}.}
+
+\bibitem[\citeproctext]{ref-braun2021thematic}
+\CSLLeftMargin{14. }%
+\CSLRightInline{Braun, V., Clarke, V.: Thematic analysis: A practical
+guide to understanding and doing. Thousand Oaks. (2021).}
+
+\bibitem[\citeproctext]{ref-blommaertCriticalDiscourseAnalysis2000}
+\CSLLeftMargin{15. }%
+\CSLRightInline{Blommaert, J., Bulcaen, C.:
+\href{https://www.jstor.org/stable/223428}{Critical {Discourse
+Analysis}}. Annual Review of Anthropology. 29, 447--466 (2000).}
+
+\bibitem[\citeproctext]{ref-fairclough2013critical}
+\CSLLeftMargin{16. }%
+\CSLRightInline{Fairclough, N.: Critical discourse analysis: {The}
+critical study of language. Routledge (2013).}
+
+\bibitem[\citeproctext]{ref-ervinCanTechnologyFulfill1993}
+\CSLLeftMargin{17. }%
+\CSLRightInline{Ervin, G.L.: Can {Technology Fulfill Its Promise}? IALLT
+Journal of Language Learning Technologies. 26, 7--16 (1993).
+https://doi.org/\href{https://doi.org/10.17161/iallt.v26i2.9498}{10.17161/iallt.v26i2.9498}.}
+
+\bibitem[\citeproctext]{ref-okerekeInnovationAnxietyNew}
+\CSLLeftMargin{18. }%
+\CSLRightInline{Okereke, C.: Innovation {Anxiety}: {The New Age
+Stressor} \textbar{} {Chibs Okereke Stress} \& {Burnout Coach}.}
+
+\end{CSLReferences}
+
+
+
+
+\end{document}

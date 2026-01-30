@@ -1,0 +1,30 @@
+---
+title: Perceived Privacy, Anonimyty and Disinhibition in HEI students
+authors:
+  - name: Fritz Van Deventer
+    affiliation: HAN University of Applied Sciences
+    roles: writing
+    corresponding: true
+bibliography: references.bib
+---
+
+## Introduction
+
+Recent developments have seen generative Artificial Intelligence (genAI) being available for the masses with Large Language Models (LLM's) having a much easier interface for non-technical users. Often signified with the moniker: AI or with magical stars (✨) it features in many applications ranging from web search to [@googleGoogleAIMode;@duckduckgoDuckaiDuckDuckGoHelp; @microsoftIntroducingNewBing] personal communication such as Outlook [@ChatCopilotOutlook] or Whatsapp [@metaMetaAIWhatsApp]. genAI is quickly becoming embedded in all sorts of business and applications [@grantham-philipsAIBecomingIngrained2024].
+Even more than in applications beforehand users are encouraged to upload documents and provide more context for the LLM to perform better.
+
+As a result of the increased use of genAI, such as LLM's, a great variety of topics have been researched in the last few years. Such as environmental impact [@dingSustainableLLMServing2024; @rillig2023risks], closing and / or widening of the digital divide [@carterExploringIntersectionDigital2020; @sartoriMindingGapsPublic2023]. In the context of education, and higher education specifically research has been conducted concerning a number of topics including: guidelines and policy [@wangGenerativeAIHigher2024], about usage, knowledge and skills [@suonpaaStudentsPerceptionsGenerative2024; @silvennoinenStudentsUsageGenAI2025], personalized learning [@zhangDesigningGenAITools2025; @udehRoleGenerativeAI2025], the effect on learning outcomes [@hanImpactGenAILearning2025] and the use of genAI in collaborative learning [@perifanouCollaborativeUsesGenAI2025].
+
+...
+
+The question this paper therefore puts forward is:
+
+## Research Questions
+
+How do students in higher education experience human agency and liberty in using GenAI tools?
+
+Subquestions:
+
+- What do HEI students use genAI for?
+- What kind of information do they share with the system to get what they want?
+
