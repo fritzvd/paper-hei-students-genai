@@ -1,49 +1,138 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="generator" content="quarto-1.8.27">
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="keywords" content="technological innovation, beliefs, generative artificial intelligence">
 
-<meta name="keywords" content="technological innovation, beliefs, generative artificial intelligence">
+    <title>Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.</title>
+    <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      div.columns{display: flex; gap: min(4vw, 1.5em);}
+      div.column{flex: auto; overflow-x: auto;}
+      div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+      ul.task-list{list-style: none;}
+      ul.task-list li input[type="checkbox"] {
+        width: 0.8em;
+        margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+        vertical-align: middle;
+      }
+      /* CSS for citations */
+      div.csl-bib-body { }
+      div.csl-entry {
+        clear: both;
+        margin-bottom: 0em;
+      }
+      .hanging-indent div.csl-entry {
+        margin-left:2em;
+        text-indent:-2em;
+      }
+      div.csl-left-margin {
+        min-width:2em;
+        float:left;
+      }
+      div.csl-right-inline {
+        margin-left:2em;
+        padding-left:1em;
+      }
+      div.csl-indent {
+        margin-left: 2em;
+      }    </style>
 
-<title>Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+    <style>
+      body.hypothesis-enabled #quarto-embed-header {
+        padding-right: 36px;
+      }
 
+      #quarto-embed-header {
+        height: 3em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid 1px;
+      }
 
+      #quarto-embed-header h6 {
+        font-size: 1.1em;
+        padding-top: 0.6em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-weight: 400;
+      }
+
+      #quarto-embed-header a.quarto-back-link,
+      #quarto-embed-header a.quarto-download-embed {
+        font-size: 0.8em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .quarto-back-container {
+        padding-left: 0.5em;
+        display: flex;
+      }
+
+      .headroom {
+          will-change: transform;
+          transition: transform 200ms linear;
+      }
+
+      .headroom--pinned {
+          transform: translateY(0%);
+      }
+
+      .headroom--unpinned {
+          transform: translateY(-100%);
+      }      
+    </style>
+
+    <script>
+    window.document.addEventListener("DOMContentLoaded", function () {
+
+      var header = window.document.querySelector("#quarto-embed-header");
+      const titleBannerEl = window.document.querySelector("body > #title-block-header");
+      if (titleBannerEl) {
+        titleBannerEl.style.paddingTop = header.clientHeight + "px";
+      }
+      const contentEl = window.document.getElementById('quarto-content');
+      for (const child of contentEl.children) {
+        child.style.paddingTop = header.clientHeight + "px";
+        child.style.marginTop = "1em";
+      }
+
+      // Use the article root if the `back` call doesn't work. This isn't perfect
+      // but should typically work
+      window.quartoBackToArticle = () => {
+        var currentUrl = window.location.href;
+        window.history.back();
+        setTimeout(() => {
+            // if location was not changed in 100 ms, then there is no history back
+            if(currentUrl === window.location.href){              
+                // redirect to site root
+                window.location.href = "index.html";
+            }
+        }, 100);
+      }
+
+      const headroom = new window.Headroom(header, {
+        tolerance: 5,
+        onPin: function () {
+        },
+        onUnpin: function () {
+        },
+      });
+      headroom.init();
+    });
+    </script>
+
+    
+<script src="site_libs/manuscript-notebook/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -56,18 +145,15 @@ div.csl-indent {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-a74871fe4945b66d259aafc266475145.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script async="" src="https://hypothes.is/embed.js"></script>
+     <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
     document.body.classList.add('hypothesis-enabled');
   });
-</script>
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+</script>  <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
 <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
-
-
-<meta name="citation_title" content="Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.">
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">  
+      <meta name="citation_title" content="Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.">
 <meta name="citation_abstract" content="Technological innovation, such as Generative Artificial Intelligence (genAI), is often promoted with hyperbole and exaggeration. Misleading beliefs about its capabilities arise and are hard to decouple from the actual utility it can bring. This pattern paper aims to identify key traits of unrealistic beliefs, so students in Higher Education can make more informed decisions on how to approach technological innovations, such as genAI.">
 <meta name="citation_keywords" content="technological innovation, beliefs, generative artificial intelligence">
 <meta name="citation_author" content="Fritz Van Deventer">
@@ -386,9 +472,16 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Addressing Conceptual Gaps in Big Data Research Ethics: An Application of Contextual Integrity;,citation_abstract=The rise of big data has provided new avenues for researchers to explore, observe, and measure human opinions, activities, and interactions. While scholars, professional societies, and ethical review boards have long-established research ethics frameworks to ensure the rights and welfare of the research subjects are protected, the rapid rise of big data-based research generates new challenges to long-held ethical assumptions and guidelines. This article discloses emerging conceptual gaps in relation to how researchers and ethical review boards think about privacy, anonymity, consent, and harm in the context of big data research. It closes by invoking Nissenbaum’s theory of “privacy as contextual integrity” as a useful heuristic to guide ethical decision-making in big data research projects.;,citation_author=Michael Zimmer;,citation_publication_date=2018-04;,citation_cover_date=2018-04;,citation_year=2018;,citation_issue=2;,citation_doi=10.1177/2056305118768300;,citation_issn=2056-3051, 2056-3051;,citation_volume=4;,citation_language=en-US;,citation_journal_title=Social Media + Society;">
 </head>
 
-<body class="quarto-light">
+  <body class="quarto-notebook quarto-light">
+    <div id="quarto-embed-header" class="headroom fixed-top bg-primary">
+      
+      <a onclick="window.quartoBackToArticle(); return false;" class="btn btn-primary quarto-back-link" href=""><i class="bi bi-caret-left"></i> Back to Article</a>
+      <h6><i class="bi bi-journal-code"></i> Article Notebook</h6>
 
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+            <a href="./paper-imaginaries-hype-myth.qmd" class="btn btn-primary quarto-download-embed" download="paper-imaginaries-hype-myth.qmd">Download Source</a>
+          </div>
+
+     <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Patterns of Myth, Over-promise and Hype in New Technologies: A case of Generative AI amongst Higher Education students.</h1>
@@ -419,7 +512,7 @@ div.csl-indent {
               </div>
       </div>
       <div class="quarto-title-meta-column-end quarto-other-formats-target">
-      <div class="quarto-alternate-formats"><div class="quarto-title-meta-heading">Other Formats</div><div class="quarto-title-meta-contents"><p><a href="paper-imaginaries-hype-myth.docx"><i class="bi bi-file-word"></i>MS Word</a></p></div><div class="quarto-title-meta-contents"><p><a href="paper-imaginaries-hype-myth.pdf"><i class="bi bi-file-pdf"></i>PDF</a></p></div></div></div>
+      </div>
     </div>
 
     <div>
@@ -462,18 +555,13 @@ div.csl-indent {
   </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
-<div class="quarto-alternate-notebooks"><h2>Notebooks</h2><ul><li><a href="notes_tineke-preview.html"><i class="bi bi-journal-code"></i>- Conclusions/further work</a></li><li><a href="paper-imaginaries-hype-myth-preview.html"><i class="bi bi-journal-code"></i>Article Notebook</a></li><li><a href="paper-hei-students-preview.html"><i class="bi bi-journal-code"></i>Perceived Privacy, Anonimyty and Disinhibition in HEI students</a></li></ul></div></nav>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-
-
-  
-
-
-<section id="introduction" class="level2">
+       <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p><em>“I think in many ways GPT-5 is already smarter than me and many other people,”</em> says Sam Altman when interviewed by Die Welt <span class="citation" data-cites="burgardOpenAIChefSamAltman2025">[<a href="#ref-burgardOpenAIChefSamAltman2025" role="doc-biblioref">1</a>]</span>. Anthromorphisation, mystification and hype currently have surrounded Artificial Intelligence since the late 1950s <span class="citation" data-cites="guestUncriticalAdoptionAI2025">[<a href="#ref-guestUncriticalAdoptionAI2025" role="doc-biblioref">2</a>]</span>. AI is not alone in being communicated in a “hyped” fashion, that can involve “exaggerations about the significance or certainty of research findings <span class="citation" data-cites="intemannUnderstandingProblemHype2022">[<a href="#ref-intemannUnderstandingProblemHype2022" role="doc-biblioref">3</a>]</span>. This has been the case for a lot of topics such as but not limited to: neuroimaging, stem cell research, nanotechnology, genomics, and artifical intelligence.</p>
 <p>Over the last few years there has been a great wave of AI applications, or more accurately software applications bundled with generative AI (GenAI) amongst other forms of AI. GenAI uses a variety of models to generate text, images, music and even video. Online platforms like ChatGPT, but also Copilot which is now embedded in the whole Microsoft Office suite, and even plain Google Search which always comes with a generated answer on top of the page. Signified with “AI” or ✨ it is usually a form of a Large Language Model that interprets requests and gives human-like answers.</p>
@@ -513,7 +601,7 @@ div.csl-indent {
 <section id="solution" class="level2">
 <h2 class="anchored" data-anchor-id="solution">Solution</h2>
 <p>By discovering themes and power relations in language we can describe a recurring phenomenon in different technological transformations.</p>
-<div class="cell" data-layout-align="default">
+<div class="cell-container"><div class="cell-decorator"><pre>In [1]:</pre></div><div class="cell" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class="figure"><p></p>
@@ -533,7 +621,7 @@ div.csl-indent {
 <p></p></figure><p></p>
 </div>
 </div>
-<a class="quarto-notebook-link" id="nblink-1" href="paper-imaginaries-hype-myth-preview.html">Source: Article Notebook</a></div>
+</div></div>
 </section>
 <section id="consequences" class="level2">
 <h2 class="anchored" data-anchor-id="consequences">Consequences</h2>
@@ -555,11 +643,8 @@ div.csl-indent {
 </section>
 </section>
 <section id="references" class="level2 unnumbered">
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
 <div id="ref-burgardOpenAIChefSamAltman2025" class="csl-entry" role="listitem">
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Burgard, J.P.: <span>OpenAI-Chef Sam Altman</span>: ,,<span>Ich</span> glaube nicht, dass die <span>KI Menschen</span> wie <span>Ameisen</span> behandeln wird“ - <span>WELT</span>, (2025).</div>
 </div>
@@ -617,9 +702,10 @@ div.csl-indent {
 <div id="ref-zheng2025resisting" class="csl-entry" role="listitem">
 <div class="csl-left-margin">19. </div><div class="csl-right-inline">Zheng, K., Huber, L., Stark, A., Kim, N., Lameiro, F., Santo, W.L., Chowdhary, S., Kim, E., Zhang, J.: <a href="https://arxiv.org/abs/2508.08313">Resisting <span>AI</span> solutionism through workplace collective action</a>. arXiv preprint arXiv:2508.08313. (2025).</div>
 </div>
-</div></section></div></main>
-<!-- /main column -->
-<script id="quarto-html-after-body" type="application/javascript">
+</div>
+</section>
+     </main>
+<!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -1018,10 +1104,6 @@ div.csl-indent {
       }
     }
   });
-  </script>
-</div> <!-- /content -->
-
-
-
-
+  </script>  </div> <!-- /content --> 
+  
 </body></html>
